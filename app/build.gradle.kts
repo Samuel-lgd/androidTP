@@ -73,5 +73,17 @@ dependencies {
     //Permet de charger des images sur internet
     implementation("com.github.bumptech.glide:compose:1.0.0-alpha.5")
 
+    //Navigation
+    implementation("androidx.navigation:navigation-compose:+")
 
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.+")
+
+    //Coroutine
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:+")
+
+    //LifeCycleScope
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.+")
+
+    //ViewModelScope
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.+")
 }
