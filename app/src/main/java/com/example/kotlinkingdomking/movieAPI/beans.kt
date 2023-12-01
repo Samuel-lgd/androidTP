@@ -26,6 +26,7 @@ data class MovieDetailsBean(
     var languages:List<String>,
     var origin_country:List<String>,
     var status:String,
+    var seasons:List<SeasonBean>,
 )
 
 data class GenreBean(
@@ -38,5 +39,15 @@ data class MovieSearchResults(
     var results:List<MovieBean>,
     var total_pages:Int,
     var total_results:Int
+)
+
+data class SeasonBean(
+    var id:Int,
+    var name:String,
+    var overview:String,
+    var poster_path:String,
+    var season_number:Int,
+    var episode_count:Int,
+    var air_date:String,
 )
 

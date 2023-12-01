@@ -19,6 +19,8 @@ class MainViewModel : ViewModel() {
     var movieDetails = mutableStateOf<MovieDetailsBean?>(null)
         private set
 
+    var isSeasonsTabOpen by  mutableStateOf(false)
+
     var searchText by mutableStateOf("")
         private set
 

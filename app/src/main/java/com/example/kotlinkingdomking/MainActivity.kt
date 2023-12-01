@@ -26,9 +26,7 @@ class MainActivity : ComponentActivity() {
             KotlinKingdomKingTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = BlackBackground) {
-//                    AppNavigation()
-                    val navController: NavHostController = rememberNavController()
-        DetailScreen(movieId = 66732 , navHostController = navController)
+                    AppNavigation()
                 }
             }
         }
@@ -38,7 +36,6 @@ class MainActivity : ComponentActivity() {
     fun AppNavigation() {
 
         val navController: NavHostController = rememberNavController()
-        val viewModel: MainViewModel = androidx.lifecycle.viewmodel.compose.viewModel()
 
         NavHost(navController = navController, startDestination = Routes.SearchScreen.route) {
             composable(Routes.SearchScreen.route) {
